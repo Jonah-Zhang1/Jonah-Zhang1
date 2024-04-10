@@ -52,7 +52,7 @@ R422_S32K324_TEMPLATE_ETH_M7_0.siz \
 all: R422_S32K324_TEMPLATE_ETH_M7_0.elf secondary-outputs
 
 # Tool invocations
-R422_S32K324_TEMPLATE_ETH_M7_0.elf: $(OBJS) C:/Users/zhang_liu/workspaceS32DS.3.5/R422_S32K324_TEMPLATE_ETH/R422_S32K324_TEMPLATE_ETH_M7_0/MCAL/Platform_TS_T40D34M20I0R0/build_files/gcc/linker_flash_s32k324.ld} $(USER_OBJS)
+R422_S32K324_TEMPLATE_ETH_M7_0.elf: $(OBJS) C:/Users/zhang_liu/workspaceS32DS.3.5/R422_S32K324_TEMPLATE_ETH/Jonah-Zhang1/R422_S32K324_TEMPLATE_ETH_M7_0/MCAL/Platform_TS_T40D34M20I0R0/build_files/gcc/linker_flash_s32k324.ld} $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "R422_S32K324_TEMPLATE_ETH_M7_0.elf" "@R422_S32K324_TEMPLATE_ETH_M7_0.args"  $(USER_OBJS) $(LIBS)

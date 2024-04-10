@@ -1,6 +1,6 @@
 -nostartfiles
 -T
-"C:/Users/zhang_liu/workspaceS32DS.3.5/R422_S32K324_TEMPLATE_ETH/R422_S32K324_TEMPLATE_ETH_M7_0/MCAL/Platform_TS_T40D34M20I0R0/build_files/gcc/linker_flash_s32k324.ld}"
+"C:/Users/zhang_liu/workspaceS32DS.3.5/R422_S32K324_TEMPLATE_ETH/Jonah-Zhang1/R422_S32K324_TEMPLATE_ETH_M7_0/MCAL/Platform_TS_T40D34M20I0R0/build_files/gcc/linker_flash_s32k324.ld}"
 -Wl,-Map,"R422_S32K324_TEMPLATE_ETH_M7_0.map"
 -Xlinker
 --gc-sections
@@ -40,10 +40,6 @@
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/startup.o"
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/gcc/Vector_Table.o"
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/gcc/startup_cm7.o"
-"./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/ghs/Vector_Table.o"
-"./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/ghs/startup_cm7.o"
-"./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/iar/Vector_Table.o"
-"./MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/iar/startup_cm7.o"
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/nvic.o"
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/sys_init.o"
 "./MCAL/Platform_TS_T40D34M20I0R0/startup/src/system.o"

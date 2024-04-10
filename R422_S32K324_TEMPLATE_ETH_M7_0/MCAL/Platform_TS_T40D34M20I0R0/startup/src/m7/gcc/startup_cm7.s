@@ -145,8 +145,12 @@ _core_loop:
 .thumb 
 .thumb_func
 .globl Reset_Handler
-.globl _start
-_start:
+
+//.globl _start
+//_start:
+.globl _start_mcal
+_start_mcal:
+
 Reset_Handler:
 /*****************************************************/
 /* Skip normal entry point as nothing is initialized */

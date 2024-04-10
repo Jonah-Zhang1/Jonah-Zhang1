@@ -9,8 +9,7 @@
         <ECUC-MODULE-CONFIGURATION-VALUES>
           <SHORT-NAME>Mcu</SHORT-NAME>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/TS_T40D34M20I0R0/Mcu</DEFINITION-REF>
-          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
-          <POST-BUILD-VARIANT-USED>true</POST-BUILD-VARIANT-USED>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
           <CONTAINERS>
             <ECUC-CONTAINER-VALUE>
               <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
@@ -70,7 +69,7 @@
               <PARAMETER-VALUES>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuDebugConfiguration/McuDisableCmuApi</DEFINITION-REF>
-                  <VALUE>0</VALUE>
+                  <VALUE>1</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuDebugConfiguration/McuDisableDemReportErrorStatus</DEFINITION-REF>
@@ -214,7 +213,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuGeneralConfiguration/McuControlledClocksConfiguration/McuPll0UnderMcuControl</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuGeneralConfiguration/McuControlledClocksConfiguration/McuSircUnderMcuControl</DEFINITION-REF>
@@ -254,11 +253,11 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuNumberOfMcuModes</DEFINITION-REF>
-                  <VALUE>1</VALUE>
+                  <VALUE>0</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectors</DEFINITION-REF>
-                  <VALUE>1</VALUE>
+                  <VALUE>0</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuSWG_PAD_CLKFrequencyHz</DEFINITION-REF>
@@ -498,7 +497,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux11/McuClkMux11Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux11/McuClkMux11_Source</DEFINITION-REF>
@@ -506,7 +505,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux11/McuClockMux11Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>4.8E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux11/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -602,7 +601,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux16/McuClkMux16Div0_En</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux16/McuClkMux16_Source</DEFINITION-REF>
@@ -610,7 +609,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux16/McuClockMux16Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>1.6E7</VALUE>
+                              <VALUE>0.0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux16/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -706,7 +705,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux5/McuClkMux5Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux5/McuClkMux5_Source</DEFINITION-REF>
@@ -714,7 +713,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux5/McuClockMux5Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>2.4E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux5/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -732,7 +731,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux6/McuClkMux6Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux6/McuClkMux6_Source</DEFINITION-REF>
@@ -740,7 +739,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux6/McuClockMux6Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>2.4E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux6/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -758,15 +757,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClkMux7Div0_En</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClkMux7_Source</DEFINITION-REF>
-                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
+                              <VALUE>FIRC_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClockMux7Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>5.0E7</VALUE>
+                              <VALUE>0.0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -784,15 +783,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClkMux8Div0_En</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClkMux8_Source</DEFINITION-REF>
-                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
+                              <VALUE>FIRC_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClockMux8Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>5.0E7</VALUE>
+                              <VALUE>0.0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -810,15 +809,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClkMux9Div0_En</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClkMux9_Source</DEFINITION-REF>
-                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
+                              <VALUE>FIRC_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClockMux9Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>5.0E7</VALUE>
+                              <VALUE>0.0</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -826,193 +825,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuCgm0PcsConfig_0</SHORT-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig/McuClockPcfsUnderMcuControl</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig/McuPCS_MaxAllowableDynamicIDD</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig/McuPCS_Name</DEFINITION-REF>
-                              <VALUE>PCFS_8</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig/McuPCS_SourceFrequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
                       </SUB-CONTAINERS>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClkMonitor_0</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClkMonitorEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClockMonitorUnderMcuControl</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuCmuName</DEFINITION-REF>
-                          <VALUE>CMU_FC_0_FXOSC_CLK</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClkMonitor_1</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClkMonitorEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClockMonitorUnderMcuControl</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuCmuName</DEFINITION-REF>
-                          <VALUE>CMU_FC_3_CORE_CLK</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClkMonitor_2</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClkMonitorEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClockMonitorUnderMcuControl</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuCmuName</DEFINITION-REF>
-                          <VALUE>CMU_FC_4_AIPS_PLAT_CLK</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClkMonitor_3</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClkMonitorEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuClockMonitorUnderMcuControl</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuCmuName</DEFINITION-REF>
-                          <VALUE>CMU_FC_5_HSE_CLK</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFHHInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLAsyncEventEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClkMonitor/McuFLLInterruptEn</DEFINITION-REF>
-                          <VALUE>0</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>AIPS_PLAT_CLOCK</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
-                          <VALUE>AIPS_PLAT_CLK</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
-                          <VALUE>4.8E7</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>Eth_Clock</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
-                          <VALUE>EMAC_CLK_TS</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
-                          <VALUE>5.0E7</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
                       <SHORT-NAME>McuFIRC</SHORT-NAME>
@@ -1042,19 +855,19 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFXOSC_Frequency</DEFINITION-REF>
-                          <VALUE>1.6E7</VALUE>
+                          <VALUE>0.0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscBypass</DEFINITION-REF>
-                          <VALUE>1</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscCounter</DEFINITION-REF>
-                          <VALUE>157</VALUE>
+                          <VALUE>49</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscMainComparator</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscOverdriveProtection</DEFINITION-REF>
@@ -1062,7 +875,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscPowerDownCtr</DEFINITION-REF>
-                          <VALUE>1</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuFXOSC/McuFxoscUnderMcuControl</DEFINITION-REF>
@@ -1080,7 +893,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPLLUnderMcuControl</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <SUB-CONTAINERS>
@@ -1090,15 +903,15 @@
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllDvMfi</DEFINITION-REF>
-                              <VALUE>50</VALUE>
+                              <VALUE>120</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllDvOdiv2</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>2</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllDvRdiv</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>2</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllFdFmod</DEFINITION-REF>
@@ -1142,7 +955,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv0_Div</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>2</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv0_En</DEFINITION-REF>
@@ -1150,7 +963,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv1_Div</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>2</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv1_En</DEFINITION-REF>
@@ -1188,11 +1001,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuRtcClockSelect/McuRtc_Frequency</DEFINITION-REF>
-                          <VALUE>32768.0</VALUE>
+                          <VALUE>4.8E7</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuRtcClockSelect/McuRtc_Source</DEFINITION-REF>
-                          <VALUE>SXOSC_CLK</VALUE>
+                          <VALUE>FIRC_CLK</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -1220,7 +1033,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuSXOSC/McuSXOSC_Frequency</DEFINITION-REF>
-                          <VALUE>32768.0</VALUE>
+                          <VALUE>0.0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuSXOSC/McuSxoscCounter</DEFINITION-REF>
@@ -1228,7 +1041,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuSXOSC/McuSxoscPowerDownCtr</DEFINITION-REF>
-                          <VALUE>1</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuSXOSC/McuSxoscUnderMcuControl</DEFINITION-REF>
@@ -1342,7 +1155,7 @@
                                 </ECUC-NUMERICAL-PARAM-VALUE>
                                 <ECUC-NUMERICAL-PARAM-VALUE>
                                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPartition0Config/McuCore0Configuration/McuCoreUnderMcuControl</DEFINITION-REF>
-                                  <VALUE>0</VALUE>
+                                  <VALUE>1</VALUE>
                                 </ECUC-NUMERICAL-PARAM-VALUE>
                               </PARAMETER-VALUES>
                             </ECUC-CONTAINER-VALUE>
@@ -1364,7 +1177,7 @@
                                 </ECUC-NUMERICAL-PARAM-VALUE>
                                 <ECUC-NUMERICAL-PARAM-VALUE>
                                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPartition0Config/McuCore1Configuration/McuCoreUnderMcuControl</DEFINITION-REF>
-                                  <VALUE>0</VALUE>
+                                  <VALUE>1</VALUE>
                                 </ECUC-NUMERICAL-PARAM-VALUE>
                               </PARAMETER-VALUES>
                             </ECUC-CONTAINER-VALUE>
@@ -1444,7 +1257,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPartition2Config/McuPrtnCofb0UnderMcuControl</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPartition2Config/McuPrtnCofb1UnderMcuControl</DEFINITION-REF>
@@ -1514,35 +1327,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_1</SHORT-NAME>
-                          <INDEX>1</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN0_COFB1_REQ33</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>BCTU</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_2</SHORT-NAME>
-                          <INDEX>2</INDEX>
+                          <INDEX>1</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1568,62 +1354,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_3</SHORT-NAME>
-                          <INDEX>3</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN0_COFB1_REQ35</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EMIOS_1</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_4</SHORT-NAME>
-                          <INDEX>4</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN0_COFB1_REQ36</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EMIOS_2</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_5</SHORT-NAME>
-                          <INDEX>5</INDEX>
+                          <INDEX>2</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1649,35 +1381,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_6</SHORT-NAME>
-                          <INDEX>6</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN0_COFB1_REQ39</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>LCU_1</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_7</SHORT-NAME>
-                          <INDEX>7</INDEX>
+                          <INDEX>3</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1704,7 +1409,7 @@
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_8</SHORT-NAME>
-                          <INDEX>8</INDEX>
+                          <INDEX>4</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1731,7 +1436,7 @@
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_9</SHORT-NAME>
-                          <INDEX>9</INDEX>
+                          <INDEX>5</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1757,35 +1462,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_10</SHORT-NAME>
-                          <INDEX>10</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN0_COFB1_REQ44</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>1</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>PIT_0</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_11</SHORT-NAME>
-                          <INDEX>11</INDEX>
+                          <INDEX>6</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1812,12 +1490,12 @@
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_12</SHORT-NAME>
-                          <INDEX>12</INDEX>
+                          <INDEX>7</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB0_REQ3</VALUE>
+                              <VALUE>PRTN0_COFB1_REQ46</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
@@ -1825,7 +1503,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EDMA</VALUE>
+                              <VALUE>MU_A</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
@@ -1839,7 +1517,34 @@
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
                           <SHORT-NAME>McuPeripheral_13</SHORT-NAME>
-                          <INDEX>13</INDEX>
+                          <INDEX>8</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN0_COFB1_REQ47</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>MU_B</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_15</SHORT-NAME>
+                          <INDEX>9</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1865,8 +1570,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_14</SHORT-NAME>
-                          <INDEX>14</INDEX>
+                          <SHORT-NAME>McuPeripheral_16</SHORT-NAME>
+                          <INDEX>10</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1892,8 +1597,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_15</SHORT-NAME>
-                          <INDEX>15</INDEX>
+                          <SHORT-NAME>McuPeripheral_17</SHORT-NAME>
+                          <INDEX>11</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1919,8 +1624,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_16</SHORT-NAME>
-                          <INDEX>16</INDEX>
+                          <SHORT-NAME>McuPeripheral_18</SHORT-NAME>
+                          <INDEX>12</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1946,8 +1651,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_17</SHORT-NAME>
-                          <INDEX>17</INDEX>
+                          <SHORT-NAME>McuPeripheral_19</SHORT-NAME>
+                          <INDEX>13</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -1973,8 +1678,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_18</SHORT-NAME>
-                          <INDEX>18</INDEX>
+                          <SHORT-NAME>McuPeripheral_20</SHORT-NAME>
+                          <INDEX>14</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2000,8 +1705,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_19</SHORT-NAME>
-                          <INDEX>19</INDEX>
+                          <SHORT-NAME>McuPeripheral_21</SHORT-NAME>
+                          <INDEX>15</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2027,8 +1732,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_20</SHORT-NAME>
-                          <INDEX>20</INDEX>
+                          <SHORT-NAME>McuPeripheral_22</SHORT-NAME>
+                          <INDEX>16</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2054,8 +1759,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_21</SHORT-NAME>
-                          <INDEX>21</INDEX>
+                          <SHORT-NAME>McuPeripheral_23</SHORT-NAME>
+                          <INDEX>17</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2081,8 +1786,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_22</SHORT-NAME>
-                          <INDEX>22</INDEX>
+                          <SHORT-NAME>McuPeripheral_24</SHORT-NAME>
+                          <INDEX>18</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2108,35 +1813,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_23</SHORT-NAME>
-                          <INDEX>23</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB0_REQ14</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EDMA_TCD_10</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_24</SHORT-NAME>
-                          <INDEX>24</INDEX>
+                          <SHORT-NAME>McuPeripheral_26</SHORT-NAME>
+                          <INDEX>19</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2162,8 +1840,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_25</SHORT-NAME>
-                          <INDEX>25</INDEX>
+                          <SHORT-NAME>McuPeripheral_27</SHORT-NAME>
+                          <INDEX>20</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2189,8 +1867,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_26</SHORT-NAME>
-                          <INDEX>26</INDEX>
+                          <SHORT-NAME>McuPeripheral_28</SHORT-NAME>
+                          <INDEX>21</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2216,8 +1894,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_27</SHORT-NAME>
-                          <INDEX>27</INDEX>
+                          <SHORT-NAME>McuPeripheral_29</SHORT-NAME>
+                          <INDEX>22</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2243,8 +1921,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_28</SHORT-NAME>
-                          <INDEX>28</INDEX>
+                          <SHORT-NAME>McuPeripheral_30</SHORT-NAME>
+                          <INDEX>23</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2270,8 +1948,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_29</SHORT-NAME>
-                          <INDEX>29</INDEX>
+                          <SHORT-NAME>McuPeripheral_31</SHORT-NAME>
+                          <INDEX>24</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2297,8 +1975,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_30</SHORT-NAME>
-                          <INDEX>30</INDEX>
+                          <SHORT-NAME>McuPeripheral_32</SHORT-NAME>
+                          <INDEX>25</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2324,8 +2002,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_31</SHORT-NAME>
-                          <INDEX>31</INDEX>
+                          <SHORT-NAME>McuPeripheral_33</SHORT-NAME>
+                          <INDEX>26</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2351,35 +2029,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_32</SHORT-NAME>
-                          <INDEX>32</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB1_REQ32</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>DMAMUX_0</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_33</SHORT-NAME>
-                          <INDEX>33</INDEX>
+                          <SHORT-NAME>McuPeripheral_35</SHORT-NAME>
+                          <INDEX>27</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2405,8 +2056,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_34</SHORT-NAME>
-                          <INDEX>34</INDEX>
+                          <SHORT-NAME>McuPeripheral_36</SHORT-NAME>
+                          <INDEX>28</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2432,8 +2083,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_35</SHORT-NAME>
-                          <INDEX>35</INDEX>
+                          <SHORT-NAME>McuPeripheral_37</SHORT-NAME>
+                          <INDEX>29</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2459,8 +2110,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_36</SHORT-NAME>
-                          <INDEX>36</INDEX>
+                          <SHORT-NAME>McuPeripheral_38</SHORT-NAME>
+                          <INDEX>30</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2486,8 +2137,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_37</SHORT-NAME>
-                          <INDEX>37</INDEX>
+                          <SHORT-NAME>McuPeripheral_39</SHORT-NAME>
+                          <INDEX>31</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2513,8 +2164,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_38</SHORT-NAME>
-                          <INDEX>38</INDEX>
+                          <SHORT-NAME>McuPeripheral_40</SHORT-NAME>
+                          <INDEX>32</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2540,8 +2191,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_39</SHORT-NAME>
-                          <INDEX>39</INDEX>
+                          <SHORT-NAME>McuPeripheral_41</SHORT-NAME>
+                          <INDEX>33</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2567,8 +2218,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_40</SHORT-NAME>
-                          <INDEX>40</INDEX>
+                          <SHORT-NAME>McuPeripheral_42</SHORT-NAME>
+                          <INDEX>34</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2594,8 +2245,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_41</SHORT-NAME>
-                          <INDEX>41</INDEX>
+                          <SHORT-NAME>McuPeripheral_43</SHORT-NAME>
+                          <INDEX>35</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2621,8 +2272,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_42</SHORT-NAME>
-                          <INDEX>42</INDEX>
+                          <SHORT-NAME>McuPeripheral_44</SHORT-NAME>
+                          <INDEX>36</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2648,8 +2299,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_43</SHORT-NAME>
-                          <INDEX>43</INDEX>
+                          <SHORT-NAME>McuPeripheral_45</SHORT-NAME>
+                          <INDEX>37</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2675,8 +2326,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_44</SHORT-NAME>
-                          <INDEX>44</INDEX>
+                          <SHORT-NAME>McuPeripheral_46</SHORT-NAME>
+                          <INDEX>38</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2702,8 +2353,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_45</SHORT-NAME>
-                          <INDEX>45</INDEX>
+                          <SHORT-NAME>McuPeripheral_47</SHORT-NAME>
+                          <INDEX>39</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2729,8 +2380,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_46</SHORT-NAME>
-                          <INDEX>46</INDEX>
+                          <SHORT-NAME>McuPeripheral_48</SHORT-NAME>
+                          <INDEX>40</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2756,35 +2407,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_47</SHORT-NAME>
-                          <INDEX>47</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB2_REQ69</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>FlexCAN_4</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_48</SHORT-NAME>
-                          <INDEX>48</INDEX>
+                          <SHORT-NAME>McuPeripheral_50</SHORT-NAME>
+                          <INDEX>41</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2810,8 +2434,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_49</SHORT-NAME>
-                          <INDEX>49</INDEX>
+                          <SHORT-NAME>McuPeripheral_51</SHORT-NAME>
+                          <INDEX>42</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2837,8 +2461,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_50</SHORT-NAME>
-                          <INDEX>50</INDEX>
+                          <SHORT-NAME>McuPeripheral_52</SHORT-NAME>
+                          <INDEX>43</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2864,8 +2488,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_51</SHORT-NAME>
-                          <INDEX>51</INDEX>
+                          <SHORT-NAME>McuPeripheral_53</SHORT-NAME>
+                          <INDEX>44</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2891,35 +2515,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_52</SHORT-NAME>
-                          <INDEX>52</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB2_REQ76</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>LPUART_2</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_53</SHORT-NAME>
-                          <INDEX>53</INDEX>
+                          <SHORT-NAME>McuPeripheral_55</SHORT-NAME>
+                          <INDEX>45</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2945,8 +2542,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_54</SHORT-NAME>
-                          <INDEX>54</INDEX>
+                          <SHORT-NAME>McuPeripheral_56</SHORT-NAME>
+                          <INDEX>46</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2972,8 +2569,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_55</SHORT-NAME>
-                          <INDEX>55</INDEX>
+                          <SHORT-NAME>McuPeripheral_57</SHORT-NAME>
+                          <INDEX>47</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -2999,35 +2596,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_56</SHORT-NAME>
-                          <INDEX>56</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB2_REQ80</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>LPUART_6</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_57</SHORT-NAME>
-                          <INDEX>57</INDEX>
+                          <SHORT-NAME>McuPeripheral_59</SHORT-NAME>
+                          <INDEX>48</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3053,8 +2623,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_58</SHORT-NAME>
-                          <INDEX>58</INDEX>
+                          <SHORT-NAME>McuPeripheral_60</SHORT-NAME>
+                          <INDEX>49</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3080,8 +2650,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_59</SHORT-NAME>
-                          <INDEX>59</INDEX>
+                          <SHORT-NAME>McuPeripheral_61</SHORT-NAME>
+                          <INDEX>50</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3107,8 +2677,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_60</SHORT-NAME>
-                          <INDEX>60</INDEX>
+                          <SHORT-NAME>McuPeripheral_62</SHORT-NAME>
+                          <INDEX>51</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3134,8 +2704,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_61</SHORT-NAME>
-                          <INDEX>61</INDEX>
+                          <SHORT-NAME>McuPeripheral_63</SHORT-NAME>
+                          <INDEX>52</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3161,8 +2731,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_62</SHORT-NAME>
-                          <INDEX>62</INDEX>
+                          <SHORT-NAME>McuPeripheral_64</SHORT-NAME>
+                          <INDEX>53</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3188,8 +2758,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_63</SHORT-NAME>
-                          <INDEX>63</INDEX>
+                          <SHORT-NAME>McuPeripheral_65</SHORT-NAME>
+                          <INDEX>54</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3215,35 +2785,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_64</SHORT-NAME>
-                          <INDEX>64</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN1_COFB2_REQ91</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>SAI_0</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_65</SHORT-NAME>
-                          <INDEX>65</INDEX>
+                          <SHORT-NAME>McuPeripheral_67</SHORT-NAME>
+                          <INDEX>55</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3269,8 +2812,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_66</SHORT-NAME>
-                          <INDEX>66</INDEX>
+                          <SHORT-NAME>McuPeripheral_68</SHORT-NAME>
+                          <INDEX>56</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3296,8 +2839,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_67</SHORT-NAME>
-                          <INDEX>67</INDEX>
+                          <SHORT-NAME>McuPeripheral_69</SHORT-NAME>
+                          <INDEX>57</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3323,8 +2866,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_68</SHORT-NAME>
-                          <INDEX>68</INDEX>
+                          <SHORT-NAME>McuPeripheral_70</SHORT-NAME>
+                          <INDEX>58</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3350,8 +2893,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_69</SHORT-NAME>
-                          <INDEX>69</INDEX>
+                          <SHORT-NAME>McuPeripheral_71</SHORT-NAME>
+                          <INDEX>59</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3377,8 +2920,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_70</SHORT-NAME>
-                          <INDEX>70</INDEX>
+                          <SHORT-NAME>McuPeripheral_72</SHORT-NAME>
+                          <INDEX>60</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3404,8 +2947,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_71</SHORT-NAME>
-                          <INDEX>71</INDEX>
+                          <SHORT-NAME>McuPeripheral_73</SHORT-NAME>
+                          <INDEX>61</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3431,8 +2974,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_72</SHORT-NAME>
-                          <INDEX>72</INDEX>
+                          <SHORT-NAME>McuPeripheral_74</SHORT-NAME>
+                          <INDEX>62</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3458,8 +3001,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_73</SHORT-NAME>
-                          <INDEX>73</INDEX>
+                          <SHORT-NAME>McuPeripheral_75</SHORT-NAME>
+                          <INDEX>63</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3485,8 +3028,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_74</SHORT-NAME>
-                          <INDEX>74</INDEX>
+                          <SHORT-NAME>McuPeripheral_76</SHORT-NAME>
+                          <INDEX>64</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3512,8 +3055,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_75</SHORT-NAME>
-                          <INDEX>75</INDEX>
+                          <SHORT-NAME>McuPeripheral_77</SHORT-NAME>
+                          <INDEX>65</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3539,8 +3082,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_76</SHORT-NAME>
-                          <INDEX>76</INDEX>
+                          <SHORT-NAME>McuPeripheral_78</SHORT-NAME>
+                          <INDEX>66</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3566,8 +3109,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_77</SHORT-NAME>
-                          <INDEX>77</INDEX>
+                          <SHORT-NAME>McuPeripheral_79</SHORT-NAME>
+                          <INDEX>67</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3593,35 +3136,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_78</SHORT-NAME>
-                          <INDEX>78</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN2_COFB0_REQ12</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EDMA_TCD_20</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_79</SHORT-NAME>
-                          <INDEX>79</INDEX>
+                          <SHORT-NAME>McuPeripheral_81</SHORT-NAME>
+                          <INDEX>68</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3647,8 +3163,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_80</SHORT-NAME>
-                          <INDEX>80</INDEX>
+                          <SHORT-NAME>McuPeripheral_82</SHORT-NAME>
+                          <INDEX>69</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3674,8 +3190,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_81</SHORT-NAME>
-                          <INDEX>81</INDEX>
+                          <SHORT-NAME>McuPeripheral_83</SHORT-NAME>
+                          <INDEX>70</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3701,8 +3217,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_82</SHORT-NAME>
-                          <INDEX>82</INDEX>
+                          <SHORT-NAME>McuPeripheral_84</SHORT-NAME>
+                          <INDEX>71</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3728,8 +3244,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_83</SHORT-NAME>
-                          <INDEX>83</INDEX>
+                          <SHORT-NAME>McuPeripheral_85</SHORT-NAME>
+                          <INDEX>72</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3755,8 +3271,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_84</SHORT-NAME>
-                          <INDEX>84</INDEX>
+                          <SHORT-NAME>McuPeripheral_86</SHORT-NAME>
+                          <INDEX>73</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3782,8 +3298,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_85</SHORT-NAME>
-                          <INDEX>85</INDEX>
+                          <SHORT-NAME>McuPeripheral_87</SHORT-NAME>
+                          <INDEX>74</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3809,8 +3325,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_86</SHORT-NAME>
-                          <INDEX>86</INDEX>
+                          <SHORT-NAME>McuPeripheral_88</SHORT-NAME>
+                          <INDEX>75</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3836,8 +3352,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_87</SHORT-NAME>
-                          <INDEX>87</INDEX>
+                          <SHORT-NAME>McuPeripheral_89</SHORT-NAME>
+                          <INDEX>76</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3863,8 +3379,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_88</SHORT-NAME>
-                          <INDEX>88</INDEX>
+                          <SHORT-NAME>McuPeripheral_90</SHORT-NAME>
+                          <INDEX>77</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3890,35 +3406,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_89</SHORT-NAME>
-                          <INDEX>89</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN2_COFB0_REQ23</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EDMA_TCD_31</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_90</SHORT-NAME>
-                          <INDEX>90</INDEX>
+                          <SHORT-NAME>McuPeripheral_92</SHORT-NAME>
+                          <INDEX>78</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3944,8 +3433,35 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_91</SHORT-NAME>
-                          <INDEX>91</INDEX>
+                          <SHORT-NAME>McuPeripheral_93</SHORT-NAME>
+                          <INDEX>79</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB0_REQ27</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>SWT_1</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_94</SHORT-NAME>
+                          <INDEX>80</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3971,35 +3487,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_92</SHORT-NAME>
-                          <INDEX>92</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN2_COFB1_REQ32</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>1</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>EMAC</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_93</SHORT-NAME>
-                          <INDEX>93</INDEX>
+                          <SHORT-NAME>McuPeripheral_96</SHORT-NAME>
+                          <INDEX>81</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4025,8 +3514,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_94</SHORT-NAME>
-                          <INDEX>94</INDEX>
+                          <SHORT-NAME>McuPeripheral_97</SHORT-NAME>
+                          <INDEX>82</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4052,8 +3541,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_95</SHORT-NAME>
-                          <INDEX>95</INDEX>
+                          <SHORT-NAME>McuPeripheral_98</SHORT-NAME>
+                          <INDEX>83</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4079,8 +3568,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_96</SHORT-NAME>
-                          <INDEX>96</INDEX>
+                          <SHORT-NAME>McuPeripheral_99</SHORT-NAME>
+                          <INDEX>84</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4106,8 +3595,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_97</SHORT-NAME>
-                          <INDEX>97</INDEX>
+                          <SHORT-NAME>McuPeripheral_100</SHORT-NAME>
+                          <INDEX>85</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4133,35 +3622,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_98</SHORT-NAME>
-                          <INDEX>98</INDEX>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
-                              <VALUE>PRTN2_COFB1_REQ40</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
-                              <VALUE>LPUART_13</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
-                              <VALUE>NONE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_99</SHORT-NAME>
-                          <INDEX>99</INDEX>
+                          <SHORT-NAME>McuPeripheral_102</SHORT-NAME>
+                          <INDEX>86</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4187,8 +3649,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_100</SHORT-NAME>
-                          <INDEX>100</INDEX>
+                          <SHORT-NAME>McuPeripheral_103</SHORT-NAME>
+                          <INDEX>87</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4214,8 +3676,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_101</SHORT-NAME>
-                          <INDEX>101</INDEX>
+                          <SHORT-NAME>McuPeripheral_104</SHORT-NAME>
+                          <INDEX>88</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4241,8 +3703,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_102</SHORT-NAME>
-                          <INDEX>102</INDEX>
+                          <SHORT-NAME>McuPeripheral_105</SHORT-NAME>
+                          <INDEX>89</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4268,8 +3730,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_103</SHORT-NAME>
-                          <INDEX>103</INDEX>
+                          <SHORT-NAME>McuPeripheral_106</SHORT-NAME>
+                          <INDEX>90</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4295,8 +3757,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_104</SHORT-NAME>
-                          <INDEX>104</INDEX>
+                          <SHORT-NAME>McuPeripheral_107</SHORT-NAME>
+                          <INDEX>91</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4322,8 +3784,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_105</SHORT-NAME>
-                          <INDEX>105</INDEX>
+                          <SHORT-NAME>McuPeripheral_108</SHORT-NAME>
+                          <INDEX>92</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4349,8 +3811,8 @@
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                          <SHORT-NAME>McuPeripheral_106</SHORT-NAME>
-                          <INDEX>106</INDEX>
+                          <SHORT-NAME>McuPeripheral_109</SHORT-NAME>
+                          <INDEX>93</INDEX>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4364,6 +3826,465 @@
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
                               <VALUE>CM7_0_TCM</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_110</SHORT-NAME>
+                          <INDEX>94</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ63</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>CM7_1_TCM</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_1</SHORT-NAME>
+                          <INDEX>95</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ32</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE></VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_101</SHORT-NAME>
+                          <INDEX>96</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ35</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE></VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_111</SHORT-NAME>
+                          <INDEX>97</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ36</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_9</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_112</SHORT-NAME>
+                          <INDEX>98</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ37</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_10</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_113</SHORT-NAME>
+                          <INDEX>99</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ38</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_11</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_114</SHORT-NAME>
+                          <INDEX>100</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ39</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_12</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_115</SHORT-NAME>
+                          <INDEX>101</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ40</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_13</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_116</SHORT-NAME>
+                          <INDEX>102</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ41</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_14</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_117</SHORT-NAME>
+                          <INDEX>103</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ42</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPUART_15</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_118</SHORT-NAME>
+                          <INDEX>104</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ47</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPSPI_4</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_119</SHORT-NAME>
+                          <INDEX>105</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ48</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPSPI_5</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_120</SHORT-NAME>
+                          <INDEX>106</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ51</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>QuadSPI</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_121</SHORT-NAME>
+                          <INDEX>107</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ55</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>SAI_1</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_122</SHORT-NAME>
+                          <INDEX>108</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ58</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>LPCMP_2</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_123</SHORT-NAME>
+                          <INDEX>109</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ62</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>CM7_0_TCM</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuResetGenerationSlot</DEFINITION-REF>
+                              <VALUE>NONE</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>McuPeripheral_124</SHORT-NAME>
+                          <INDEX>110</INDEX>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuModeEntrySlot</DEFINITION-REF>
+                              <VALUE>PRTN2_COFB1_REQ63</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
+                              <VALUE>CM7_1_TCM</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralResetEnable</DEFINITION-REF>
@@ -4401,11 +4322,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuPowerControl/McuPMC_Config/McuLMBCTLENEnable</DEFINITION-REF>
-                          <VALUE>1</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuPowerControl/McuPMC_Config/McuLMENEnable</DEFINITION-REF>
-                          <VALUE>1</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuPowerControl/McuPMC_Config/McuLMSMPSENEnable</DEFINITION-REF>
@@ -4426,40 +4347,6 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>McuRamSectorSettingConf_0</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamDefaultValue</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectionBaseAddrLinkerSym</DEFINITION-REF>
-                      <VALUE></VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectionBaseAddress</DEFINITION-REF>
-                      <VALUE>541065216</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectionSize</DEFINITION-REF>
-                      <VALUE>327680</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectionSizeLinkerSym</DEFINITION-REF>
-                      <VALUE></VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectionWriteSize</DEFINITION-REF>
-                      <VALUE>8</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuModuleConfiguration/McuRamSectorSettingConf/McuRamSectorId</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
                   <SHORT-NAME>McuResetConfig</SHORT-NAME>
@@ -4814,7 +4701,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</DEFINITION-REF>
-                      <VALUE>25</VALUE>
+                      <VALUE>24</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
@@ -4825,7 +4712,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</DEFINITION-REF>
-                      <VALUE>26</VALUE>
+                      <VALUE>25</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
@@ -4836,7 +4723,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</DEFINITION-REF>
-                      <VALUE>27</VALUE>
+                      <VALUE>26</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
@@ -4847,7 +4734,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M20I0R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</DEFINITION-REF>
-                      <VALUE>28</VALUE>
+                      <VALUE>27</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>

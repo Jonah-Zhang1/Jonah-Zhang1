@@ -35,11 +35,11 @@ MCAL/Platform_TS_T40D34M20I0R0/build_files/ghs \
 MCAL/Platform_TS_T40D34M20I0R0/src \
 MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7 \
 MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/gcc \
-MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/ghs \
-MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/iar \
 MCAL/Platform_TS_T40D34M20I0R0/startup/src \
 MCAL/Port_TS_T40D34M20I0R0/src \
 MCAL/Rte_TS_T40D34M20I0R0/src \
 generate/src \
 src \
+MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/ghs \
+MCAL/Platform_TS_T40D34M20I0R0/startup/src/m7/iar \
 
